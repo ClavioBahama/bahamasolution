@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="pt-MZ">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre Nós - Bahama Solution</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="font-sans bg-gray-50">
+    <!-- Header/Navigation -->
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <div class="flex items-center">
+                <img src="https://via.placeholder.com/50" alt="Bahama Solution Logo" class="h-10 mr-3">
+                <h1 class="text-xl font-bold text-blue-900">Bahama Solution</h1>
+            </div>
+            
+            <nav class="hidden md:flex space-x-8">
+                <a href="index.html" class="nav-link text-gray-700 hover:text-blue-900">Início</a>
+                <a href="about.html" class="nav-link text-gray-700 hover:text-blue-900">Sobre Nós</a>
+                <a href="services.html" class="nav-link text-gray-700 hover:text-blue-900">Serviços</a>
+                <a href="products.html" class="nav-link text-gray-700 hover:text-blue-900">Produtos</a>
+                <a href="contact.html" class="nav-link text-gray-700 hover:text-blue-900">Contacto</a>
+            </nav>
+            
+            <div class="flex items-center space-x-4">
+                <div class="relative">
+                    <button id="cart-btn" class="text-gray-700 hover:text-blue-900">
+                        <i class="fas fa-shopping-cart text-xl"></i>
+                        <span id="cart-count" class="cart-count absolute bg-blue-900 text-white rounded-full flex items-center justify-center">0</span>
+                    </button>
+                </div>
+                <button id="login-btn" class="bg-blue-900 text-white px-4 py-2 rounded hover:bg-blue-800 transition">Entrar</button>
+                <button id="menu-btn" class="md:hidden text-gray-700">
+                    <i class="fas fa-bars text-xl"></i>
+                </button>
+            </div>
+        </div>
+        
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="mobile-menu">
+            <a href="index.html" class="py-2 text-gray-700 hover:text-blue-900">Início</a>
+            <a href="sobre.html" class="py-2 text-gray-700 hover:text-blue-900">Sobre Nós</a>
+            <a href="servicos.html" class="py-2 text-gray-700 hover:text-blue-900">Serviços</a>
+            <a href="produtos.html" class="py-2 text-gray-700 hover:text-blue-900">Produtos</a>
+            <a href="contacto.html" class="py-2 text-gray-700 hover:text-blue-900">Contacto</a>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center text-blue-900 mb-12">Sobre a Bahama Solution</h2>
+            
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-8 md:mb-0 md:pr-8">
+                    <img src="https://images.unsplash.com/photo-1556740738-b6a17110a1ad?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Nossa Equipe" class="rounded-lg shadow-md w-full">
+                </div>
+                <div class="md:w-1/2">
+                    <h3 class="text-2xl font-semibold text-blue-900 mb-4">Nossa História</h3>
+                    <p class="text-gray-700 mb-4">Fundada em 2010, a Bahama Solution surgiu da necessidade de oferecer serviços de reprografia de alta qualidade em Moçambique. Começamos como uma pequena loja e hoje somos referência no sector.</p>
+                    
+                    <h3 class="text-2xl font-semibold text-blue-900 mb-4">Nossa Missão</h3>
+                    <p class="text-gray-700 mb-4">Fornecer soluções completas em reprografia, desde serviços de impressão até a venda de materiais de escritório, sempre com foco na qualidade, preço justo e satisfação do cliente.</p>
+                    
+                    <h3 class="text-2xl font-semibold text-blue-900 mb-4">Nossos Valores</h3>
+                    <ul class="text-gray-700 space-y-2">
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                            <span>Compromisso com a qualidade</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                            <span>Atendimento personalizado</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                            <span>Inovação constante</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                            <span>Responsabilidade social</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-blue-900 text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Bahama Solution</h3>
+                    <p class="mb-4">Sua solução completa em reprografia e materiais de escritório em Moçambique.</p>
+                    <div class="flex space-x-2">
+                        <img src="https://via.placeholder.com/80x50?text=SSL" alt="SSL Secure" class="h-10">
+                        <img src="https://via.placeholder.com/80x50?text=MPesa" alt="M-Pesa" class="h-10">
+                    </div>
+                </div>
+                
+                <div>
+                    <h4 class="font-semibold mb-4">Links Rápidos</h4>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="hover:underline">Início</a></li>
+                        <li><a href="sobre.html" class="hover:underline">Sobre Nós</a></li>
+                        <li><a href="servicos.html" class="hover:underline">Serviços</a></li>
+                        <li><a href="produtos.html" class="hover:underline">Produtos</a></li>
+                        <li><a href="contacto.html" class="hover:underline">Contacto</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="font-semibold mb-4">Serviços</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="hover:underline">Impressão Digital</a></li>
+                        <li><a href="#" class="hover:underline">Fotocópias</a></li>
+                        <li><a href="#" class="hover:underline">Digitalização</a></li>
+                        <li><a href="#" class="hover:underline">Encadernação</a></li>
+                        <li><a href="#" class="hover:underline">Laminação</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="font-semibold mb-4">Newsletter</h4>
+                    <p class="mb-4">Inscreva-se para receber nossas novidades e promoções.</p>
+                    <form class="flex">
+                        <input type="email" placeholder="Seu email" class="px-4 py-2 w-full rounded-l focus:outline-none text-gray-900">
+                        <button type="submit" class="bg-blue-800 px-4 py-2 rounded-r hover:bg-blue-700 transition">
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+            
+            <div class="border-t border-blue-800 mt-8 pt-8 flex flex-col md:flex-row justify-between items-center">
+                <p>© 2023 Bahama Solution. Todos os direitos reservados.</p>
+                <div class="flex space-x-4 mt-4 md:mt-0">
+                    <a href="#" class="hover:underline">Termos de Serviço</a>
+                    <a href="#" class="hover:underline">Política de Privacidade</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Login Modal -->
+    <div id="login-modal" class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 hidden">
+        <div class="bg-white rounded-lg shadow-xl w-full max-w-md">
+            <div class="flex justify-between items-center border-b px-6 py-4">
+                <h3 class="text-xl font-semibold">Entrar na Sua Conta</h3>
+                <button id="close-login" class="text-gray-500 hover:text-gray-700">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="p-6">
+                <form id="login-form">
+                    <div class="mb-4">
+                        <label for="login-email" class="block text-gray-700 mb-2">Email</label>
+                        <input type="email" id="login-email" class="w-full px-4 py-2 border rounded focus:outline-none focus:ring-2 focus:ring-blue-900" required>
+                    </div>
+                    <div class="mb-6">
+                        <label for="login-password" class="block text-gray-700 mb-2">Senha</label>
+                        <input type="password" id="login-password" class="w-full px-4 py-2 border rounded focus:outline-none focus:ring-2 focus:ring-blue-900" required>
+                    </div>
+                    <button type="submit" class="w-full bg-blue-900 text-white py-2 rounded hover:bg-blue-800 transition mb-4">Entrar</button>
+                    <div class="text-center">
+                        <a href="#" class="text-blue-900 hover:underline text-sm">Esqueceu sua senha?</a>
+                    </div>
+                </form>
+            </div>
+            <div class="border-t px-6 py-4 bg-gray-50 rounded-b-lg">
+                <p class="text-center text-gray-600">Não tem uma conta? <a href="#" id="register-link" class="text-blue-900 hover:underline">Registre-se</a></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Register Modal -->
+    <div id="register-modal" class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 hidden">
+        <div class="bg-white rounded-lg shadow-xl w-full max-w-md">
+            <div class="flex justify-between items-center border-b px-6 py-4">
+                <h3 class="text-xl font-semibold">Criar Nova Conta</h3>
+                <button id="close-register" class="text-gray-500 hover:text-gray-700">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="p-6">
+                <form id="register-form">
+                    <div class="mb-4">
+                        <label for="register-name" class="block text-gray-700 mb-2">Nome Completo</label>
+                        <input type="text" id="register-name" class="w-full px-4 py-2 border rounded focus:outline-none focus:ring-2 focus:ring-blue-900" required>
+                    </div>
+                    <div class="mb-4">
+                        <label for="register-email" class="block text-gray-700 mb-2">Email</label>
+                        <input type="email" id="register-email" class="w-full px-4 py-2 border rounded focus:outline-none focus:ring-2 focus:ring-blue-900" required>
+                    </div>
+                    <div class="mb-4">
+                        <label for="register-phone" class="block text-gray-700 mb-2">Telefone</label>
+                        <input type="tel" id="register-phone" class="w-full px-4 py-2 border rounded focus:outline-none focus:ring-2 focus:ring-blue-900" required>
+                    </div>
+                    <div class="mb-4">
+                        <label for="register-password" class="block text-gray-700 mb-2">Senha</label>
+                        <input type="password" id="register-password" class="w-full px-4 py-2 border rounded focus:outline-none focus:ring-2 focus:ring-blue-900" required>
+                    </div>
+                    <div class="mb-6">
+                        <label for="register-confirm" class="block text-gray-700 mb-2">Confirmar Senha</label>
+                        <input type="password" id="register-confirm" class="w-full px-4 py-2 border rounded focus:outline-none focus:ring-2 focus:ring-blue-900" required>
+                    </div>
+                    <button type="submit" class="w-full bg-blue-900 text-white py-2 rounded hover:bg-blue-800 transition">Registrar</button>
+                </form>
+            </div>
+            <div class="border-t px-6 py-4 bg-gray-50 rounded-b-lg">
+                <p class="text-center text-gray-600">Já tem uma conta? <a href="#" id="login-link" class="text-blue-900 hover:underline">Entrar</a></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Cart Sidebar -->
+    <div id="cart-sidebar" class="fixed top-0 right-0 h-full w-full md:w-96 bg-white shadow-lg transform translate-x-full transition-transform duration-300 ease-in-out z-50">
+        <div class="flex justify-between items-center border-b px-6 py-4">
+            <h3 class="text-xl font-semibold">Seu Carrinho</h3>
+            <button id="close-cart" class="text-gray-500 hover:text-gray-700">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        <div class="p-4 h-3/4 overflow-y-auto">
+            <div id="cart-items" class="space-y-4">
+                <p class="text-gray-500 text-center py-10">Seu carrinho está vazio</p>
+            </div>
+        </div>
+        <div class="absolute bottom-0 left-0 right-0 border-t bg-white p-4">
+            <div class="flex justify-between mb-4">
+                <span class="font-semibold">Subtotal:</span>
+                <span id="cart-subtotal" class="font-bold">0 MT</span>
+            </div>
+            <button id="checkout-btn" class="w-full bg-blue-900 text-white py-3 rounded hover:bg-blue-800 transition">Finalizar Compra</button>
+        </div>
+    </div>
+
+    <!-- Overlay -->
+    <div id="overlay" class="fixed inset-0 bg-black bg-opacity-50 z-40 hidden"></div>
+
+    <!-- Checkout Modal -->
+    <div id="checkout-modal" class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 hidden">
+        <div class="bg-white rounded-lg shadow-xl w-full max-w-2xl">
+            <div class="flex justify-between items-center border-b px-6 py-4">
+                <h3 class="text-xl font-semibold">Finalizar Compra</h3>
+                <button id="close-checkout" class="text-gray-500 hover:text-gray-700">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="p-6">
+                <div class="flex flex-col md:flex-row gap-8">
+                    <div class="md:w-1/2">
+                        <h4 class="font-semibold mb-4">Método de Pagamento</h4>
+                        <div class="space-y-4">
+                            <div class="flex items-center">
+                                <input type="radio" id="mpesa" name="payment" value="mpesa" class="mr-2" checked>
+                                <label for="mpesa" class="flex items-center">
+                                    <img src="https://via.placeholder.com/40x40?text=M-Pesa" alt="M-Pesa" class="h-8 mr-2">
+                                    M-Pesa
+                                </label>
+                            </div>
+                            <div class="flex items-center">
+                                <input type="radio" id="visa" name="payment" value="visa" class="mr-2">
+                                <label for="visa" class="flex items-center">
+                                    <img src="https://via.placeholder.com/40x40?text=Visa" alt="Visa" class="h-8 mr-2">
+                                    Visa/Mastercard
+                                </label>
+                            </div>
+                            <div class="flex items-center">
+                                <input type="radio" id="emola" name="payment" value="emola" class="mr-2">
+                                <label for="emola" class="flex items-center">
+                                    <img src="https://via.placeholder.com/40x40?text=E-Mola" alt="E-Mola" class="h-8 mr-2">
+                                    Transferência para M-Pesa (E-Mola)
+                                </label>
+                            </div>
+                        </div>
+                        
+                        <div id="mpesa-details" class="mt-6">
+                            <h5 class="font-medium mb-2">Instruções para pagamento via M-Pesa</h5>
+                            <ol class="list-decimal pl-5 space-y-1 text-sm">
+                                <li>Acesse o menu M-Pesa no seu telefone</li>
+                                <li>Selecione "Pagar Conta"</li>
+                                <li>Selecione "Bahama Solution" como comerciante</li>
+                                <li>Digite o código <span class="font-bold">123456</span></li>
+                                <li>Digite o valor total da sua compra</li>
+                                <li>Confirme o pagamento</li>
+                            </ol>
+                        </div>
+                        
+                        <div id="visa-details" class="mt-6 hidden">
+                            <div class="mb-4">
+                                <label for="card-number" class="block text-gray-700 mb-1">Número do Cartão</label>
+                                <input type="text" id="card-number" placeholder="1234 5678 9012 3456" class="w-full px-4 py-2 border rounded focus:outline-none focus:ring-2 focus:ring-blue-900">
+                            </div>
+                            <div class="flex gap-4 mb-4">
+                                <div class="w-1/2">
+                                    <label for="card-expiry" class="block text-gray-700 mb-1">Validade</label>
+                                    <input type="text" id="card-expiry" placeholder="MM/AA" class="w-full px-4 py-2 border rounded focus:outline-none focus:ring-2 focus:ring-blue-900">
+                                </div>
+                                <div class="w-1/2">
+                                    <label for="card-cvv" class="block text-gray-700 mb-1">CVV</label>
+                                    <input type="text" id="card-cvv" placeholder="123" class="w-full px-4 py-2 border rounded focus:outline-none focus:ring-2 focus:ring-blue-900">
+                                </div>
+                            </div>
+                            <div class="flex items-center">
+                                <input type="checkbox" id="save-card" class="mr-2">
+                                <label for="save-card" class="text-sm text-gray-600">Salvar informações do cartão para compras futuras</label>
+                            </div>
+                        </div>
+                        
+                        <div id="emola-details" class="mt-6 hidden">
+                            <h5 class="font-medium mb-2">Instruções para pagamento via E-Mola</h5>
+                            <ol class="list-decimal pl-5 space-y-1 text-sm">
+                                <li>Faça login na sua conta E-Mola</li>
+                                <li>Selecione "Transferência para M-Pesa"</li>
+                                <li>Digite o número <span class="font-bold">841234567</span></li>
+                                <li>Digite o valor total da sua compra</li>
+                                <li>Adicione a referência <span class="font-bold">BAHAMA</span></li>
+                                <li>Confirme a transferência</li>
+                            </ol>
+                        </div>
+                    </div>
+                    
+                    <div class="md:w-1/2">
+                        <h4 class="font-semibold mb-4">Resumo do Pedido</h4>
+                        <div id="checkout-items" class="mb-4 max-h-60 overflow-y-auto">
+                            <!-- Checkout items will be added here dynamically -->
+                        </div>
+                        <div class="border-t pt-4">
+                            <div class="flex justify-between mb-2">
+                                <span>Subtotal:</span>
+                                <span id="checkout-subtotal" class="font-medium">0 MT</span>
+                            </div>
+                            <div class="flex justify-between mb-2">
+                                <span>Taxa de Entrega:</span>
+                                <span id="delivery-fee" class="font-medium">100 MT</span>
+                            </div>
+                            <div class="flex justify-between text-lg font-bold mt-4">
+                                <span>Total:</span>
+                                <span id="checkout-total" class="text-blue-900">100 MT</span>
+                            </div>
+                        </div>
+                        
+                        <div class="mt-6">
+                            <label for="delivery-address" class="block text-gray-700 mb-1">Endereço de Entrega</label>
+                            <textarea id="delivery-address" rows="3" class="w-full px-4 py-2 border rounded focus:outline-none focus:ring-2 focus:ring-blue-900 mb-4"></textarea>
+                            <label for="delivery-notes" class="block text-gray-700 mb-1">Notas Adicionais</label>
+                            <textarea id="delivery-notes" rows="2" class="w-full px-4 py-2 border rounded focus:outline-none focus:ring-2 focus:ring-blue-900"></textarea>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t px-6 py-4 bg-gray-50 rounded-b-lg flex justify-end">
+                <button id="confirm-payment" class="bg-blue-900 text-white px-6 py-2 rounded font-medium hover:bg-blue-800 transition">Confirmar Pagamento</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Success Modal -->
+    <div id="success-modal" class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 hidden">
+        <div class="bg-white rounded-lg shadow-xl w-full max-w-md text-center p-8">
+            <div class="text-green-500 text-6xl mb-4">
+                <i class="fas fa-check-circle"></i>
+            </div>
+            <h3 class="text-2xl font-semibold mb-2">Pagamento Confirmado!</h3>
+            <p class="text-gray-600 mb-6">O seu pedido foi recebido e está sendo processado. Você receberá um email com os detalhes da sua compra.</p>
+            <div class="bg-gray-100 p-4 rounded mb-6">
+                <p class="font-medium">Número do Pedido:</p>
+                <p class="text-blue-900 font-bold">BAHAMA-2023-123456</p>
+            </div>
+            <button id="close-success" class="bg-blue-900 text-white px-6 py-2 rounded font-medium hover:bg-blue-800 transition">Voltar à Loja</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
